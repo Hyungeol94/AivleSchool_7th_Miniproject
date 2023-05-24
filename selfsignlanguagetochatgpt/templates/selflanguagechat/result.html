@@ -1,7 +1,7 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'selflanguagechat/css/chat_style.css' %}">
 <div class="one-box">
-<form action="chat" method="post" entype="application/x-www-form-urlencoded">
+  <form action="chat" method="post" entype="application/x-www-form-urlencoded">
     {% csrf_token %}
     <span id="file-module-0">
       <fieldset class="custom-fieldset">
@@ -20,7 +20,13 @@
         </div>
       </fieldset>
     </span>
-</form>
+  </form>
+</div>
+
+<!-- Add a home button -->
+<div class="home-button-container">
+  <a href="/" class="home-button">Home</a>
+</div>
 
 <style>
   .home-button-container {
